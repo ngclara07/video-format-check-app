@@ -1,0 +1,665 @@
+/* ==========================================================
+   MEDIA COMPLIANCE LAB
+   EXERCISE 3
+   ========================================================== */
+
+:root {
+
+    --background:
+        #04080f;
+
+    --panel:
+        #09121d;
+
+    --border:
+        rgba(
+            148,
+            163,
+            184,
+            0.14
+        );
+
+    --text:
+        #f8fafc;
+
+    --muted:
+        #8da0b7;
+
+    --cyan:
+        #25c6e8;
+
+    --green:
+        #41e58b;
+
+    --amber:
+        #ffcc58;
+
+    --red:
+        #ff556d;
+
+    --blue:
+        #549bff;
+}
+
+
+/* ==========================================================
+   APP
+   ========================================================== */
+
+.stApp {
+
+    background:
+
+        radial-gradient(
+            circle at 10% 0%,
+            rgba(
+                22,
+                73,
+                115,
+                0.34
+            ),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(
+                18,
+                101,
+                107,
+                0.17
+            ),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            180deg,
+            #07111c 0%,
+            #040911 50%,
+            #02060a 100%
+        );
+
+    color:
+        var(--text);
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.eyebrow {
+
+    color:
+        #35d3f0;
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        750;
+
+    letter-spacing:
+        0.15rem;
+
+    margin-top:
+        0.25rem;
+
+    margin-bottom:
+        0.45rem;
+}
+
+
+.main-title {
+
+    color:
+        #ffffff;
+
+    font-size:
+        3rem;
+
+    line-height:
+        1.04;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        -0.055em;
+}
+
+
+.main-subtitle {
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.02rem;
+
+    margin-top:
+        0.5rem;
+
+    margin-bottom:
+        1.5rem;
+}
+
+
+/* ==========================================================
+   SYSTEM STATUS
+   ========================================================== */
+
+.system-status {
+
+    width:
+        fit-content;
+
+    margin-left:
+        auto;
+
+    margin-top:
+        1.3rem;
+
+    padding:
+        0.58rem
+        0.85rem;
+
+    background:
+        rgba(
+            15,
+            42,
+            34,
+            0.72
+        );
+
+    border:
+        1px solid
+        rgba(
+            65,
+            229,
+            139,
+            0.28
+        );
+
+    border-radius:
+        999px;
+
+    color:
+        #7ff2ad;
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        750;
+
+    letter-spacing:
+        0.05rem;
+}
+
+
+.warning-status {
+
+    color:
+        #ffd879;
+
+    border-color:
+        rgba(
+            255,
+            204,
+            88,
+            0.35
+        );
+
+    background:
+        rgba(
+            60,
+            44,
+            12,
+            0.55
+        );
+}
+
+
+.status-dot {
+
+    display:
+        inline-block;
+
+    width:
+        7px;
+
+    height:
+        7px;
+
+    margin-right:
+        0.42rem;
+
+    border-radius:
+        50%;
+
+    background:
+        #41e58b;
+
+    box-shadow:
+        0 0 10px
+        rgba(
+            65,
+            229,
+            139,
+            0.9
+        );
+}
+
+
+.warning-status .status-dot {
+
+    background:
+        #ffcc58;
+
+    box-shadow:
+        0 0 10px
+        rgba(
+            255,
+            204,
+            88,
+            0.8
+        );
+}
+
+
+/* ==========================================================
+   PIPELINE
+   ========================================================== */
+
+.pipeline-strip {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    align-items:
+        center;
+
+    gap:
+        0.72rem;
+
+    padding:
+        0.8rem
+        1rem;
+
+    margin-bottom:
+        1.4rem;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        12px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(
+                13,
+                28,
+                45,
+                0.94
+            ),
+            rgba(
+                6,
+                18,
+                28,
+                0.91
+            )
+        );
+
+    color:
+        #a9b9ca;
+
+    font-size:
+        0.70rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.055rem;
+}
+
+
+.pipeline-strip span {
+
+    padding:
+        0.36rem
+        0.55rem;
+
+    border-radius:
+        7px;
+
+    background:
+        rgba(
+            26,
+            50,
+            66,
+            0.62
+        );
+
+    border:
+        1px solid
+        rgba(
+            53,
+            211,
+            240,
+            0.13
+        );
+}
+
+
+.pipeline-strip b {
+
+    color:
+        #35d3f0;
+}
+
+
+/* ==========================================================
+   METRIC CARDS
+   ========================================================== */
+
+div[data-testid="stMetric"] {
+
+    padding:
+        1rem;
+
+    border:
+        1px solid
+        rgba(
+            115,
+            148,
+            177,
+            0.14
+        );
+
+    border-radius:
+        13px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(
+                15,
+                29,
+                44,
+                0.97
+            ),
+            rgba(
+                7,
+                17,
+                27,
+                0.96
+            )
+        );
+
+    box-shadow:
+        0 10px 34px
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+}
+
+
+div[data-testid="stMetricLabel"] {
+
+    color:
+        #8fa3b7;
+}
+
+
+div[data-testid="stMetricValue"] {
+
+    color:
+        #f7fbff;
+}
+
+
+/* ==========================================================
+   EMPTY TRANSCODER
+   ========================================================== */
+
+.empty-monitor {
+
+    min-height:
+        440px;
+
+    margin-top:
+        0.8rem;
+
+    border:
+        1px dashed
+        rgba(
+            53,
+            211,
+            240,
+            0.30
+        );
+
+    border-radius:
+        16px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(
+                14,
+                74,
+                89,
+                0.25
+            ),
+            rgba(
+                4,
+                11,
+                18,
+                0.94
+            )
+        );
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+}
+
+
+.monitor-icon {
+
+    color:
+        #35d3f0;
+
+    font-family:
+        monospace;
+
+    font-size:
+        2.5rem;
+
+    font-weight:
+        850;
+
+    margin-bottom:
+        1rem;
+
+    text-shadow:
+        0 0 25px
+        rgba(
+            53,
+            211,
+            240,
+            0.4
+        );
+}
+
+
+.monitor-title {
+
+    color:
+        #eef8ff;
+
+    font-size:
+        1.25rem;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        0.45rem;
+}
+
+
+.monitor-text {
+
+    color:
+        #879bad;
+
+    font-size:
+        0.9rem;
+}
+
+
+/* ==========================================================
+   SIDEBAR
+   ========================================================== */
+
+section[data-testid="stSidebar"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            #07111c,
+            #040a11
+        );
+
+    border-right:
+        1px solid
+        rgba(
+            120,
+            151,
+            177,
+            0.12
+        );
+}
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+div.stButton > button {
+
+    min-height:
+        2.8rem;
+
+    border-radius:
+        9px;
+
+    font-weight:
+        750;
+
+    letter-spacing:
+        0.015rem;
+}
+
+
+div.stButton > button[kind="primary"] {
+
+    border:
+        none;
+
+    color:
+        #04110a;
+
+    background:
+        linear-gradient(
+            90deg,
+            #1dc475,
+            #48e29a
+        );
+
+    box-shadow:
+        0 8px 30px
+        rgba(
+            29,
+            196,
+            117,
+            0.18
+        );
+}
+
+
+/* ==========================================================
+   TABLES
+   ========================================================== */
+
+div[data-testid="stDataFrame"] {
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        12px;
+
+    overflow:
+        hidden;
+}
+
+
+/* ==========================================================
+   IMAGES
+   ========================================================== */
+
+div[data-testid="stImage"] img {
+
+    border-radius:
+        10px;
+
+    border:
+        1px solid
+        rgba(
+            102,
+            145,
+            176,
+            0.13
+        );
+}
+
+
+/* ==========================================================
+   DIVIDERS
+   ========================================================== */
+
+hr {
+
+    border-color:
+        rgba(
+            115,
+            145,
+            172,
+            0.12
+        ) !important;
+}

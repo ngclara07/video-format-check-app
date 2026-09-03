@@ -1,0 +1,28 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables / secrets
+.env
+.streamlit/secrets.toml
+
+# Generated application output
+outputs/
+temp/
+
+# Original large coursework video
+videos/input/The_Gun_and_the_Pulpit.avi
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
